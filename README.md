@@ -24,19 +24,19 @@
     sudo make altinstall
 
 7. Install and configure PostgreSQL
-    Install PostgreSQL 11
+    7.1 Install PostgreSQL 11
         wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - ; \
         RELEASE=$(lsb_release -cs) ; \
         echo "deb http://apt.postgresql.org/pub/repos/apt/ ${RELEASE}"-pgdg main | sudo tee  /etc/apt/sources.list.d/pgdg.list ; \
         sudo apt update ; \
         sudo apt -y install postgresql-11 ; \
 
-    Change postges password, create clear database named tg_db:
+    7.2 Change postges password, create clear database named tg_db:
         sudo passwd postgres
         su - postgres
         export PATH=$PATH:/usr/lib/postgresql/11/bin
         createdb --encoding UNICODE tg_db --username postgres
         exit
 
-    Create tg_db user and grand privileges to him:
+    7.3 Create tg_db user and grand privileges to him:
         
