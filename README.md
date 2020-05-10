@@ -1,6 +1,7 @@
 1. Install sudo
+    '''
     apt install sudo
-
+    '''
 2. Create and configure user
     adduser <username>
         Enter password and other info at your will
