@@ -1,25 +1,33 @@
-# Install sudo
+## Install sudo
+
         ```
         apt install sudo
         ```
-# Create and configure user
-    ```adduser <username>```
+## Create and configure user
+
+    ```adduser <username>
+    ```
+
+    ```
     usermod -aG sudo <username>
     ```
 
-# Log-in as created <username>
+## Log-in as created <username>
 
-# Install cool apps
+## Install cool apps
+
     ```
     sudo apt-get install -y zsh curl git tree redis-server nginx  libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-dev python-imaging python3-lxml libxslt-dev python-libxml2 python-libxslt1 libffi-dev libssl-dev python-dev gnumeric libsqlite3-dev libpq-dev libxml2-dev libxslt1-dev libjpeg-dev libfreetype6-dev libcurl4-openssl-dev supervisor
     ```
 
-# Install oh-my-zsh:
+## Install oh-my-zsh:
+
     ```
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
 
-# Install Python
+## Install Python
+
     ```
     wget https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tgz ; \
     tar xvf Python-3.8.* ; \
@@ -30,7 +38,8 @@
     sudo make altinstall
     ```
 
-# Install and configure PostgreSQL
+## Install and configure PostgreSQL
+
 1 Install PostgreSQL 11
         ```
         wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - ; \
