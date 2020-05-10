@@ -1,13 +1,9 @@
 # Install sudo
-    ```
-    apt install sudo
-    ```
+        ```
+        apt install sudo
+        ```
 # Create and configure user
-    ```
-    adduser <username>
-    ```
-      Enter password and other info at your will
-    ```
+    ```adduser <username>```
     usermod -aG sudo <username>
     ```
 
