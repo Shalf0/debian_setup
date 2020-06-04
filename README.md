@@ -1,18 +1,13 @@
 ## Install sudo
 
-        ```
         apt install sudo
-        ```
         
 ## Create and configure user
 
-    ```adduser <username>
-    ```
-
-    ```
+    adduser <username>
+   
     usermod -aG sudo <username>
-    ```
-
+    
 ## Log-in as created <username>
 
 ## Install cool apps
