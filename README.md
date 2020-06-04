@@ -3,6 +3,7 @@
         ```
         apt install sudo
         ```
+        
 ## Create and configure user
 
     ```adduser <username>
